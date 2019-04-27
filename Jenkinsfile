@@ -18,4 +18,4 @@ node ('master'){
  stage('build'){
      sh 'cd /usr/share/maven/bin -f  ${WORKSPACE}/mahendra/pom.xml clean package'
   }
-
+}
