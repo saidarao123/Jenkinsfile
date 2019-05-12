@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               git clone 'https://github.com/saidarao123/saidarepo.git'
+               git clone 'https://github.com/saidarao123/checkstyle.git'
+                
             }
         }
         stage('build') {
