@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               git clone "https://github.com/saidarao123/checkstyle.git"
+               git clone "https://github.com/technovadors/MahendraProphecy.git"
                 
             }
         }
