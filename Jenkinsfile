@@ -10,7 +10,7 @@ pipeline {
         stage('checkout') {
             steps {
                git clone "$repo"
-                
-            }
+                }
         }
-    }   
+    } 
+}
