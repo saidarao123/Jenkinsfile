@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               git clone "$repo"
+               git clone $repo
                 }
         }
     } 
