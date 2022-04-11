@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application>
+  <securitymanager>
+    <class>com.sibvisions.rad.server.security.XmlSecurityManager</class>
+    <userfile>users.xml</userfile>
+  </securitymanager>
+  
+  <timeout>
+    <!-- MasterSession timeout in minutes -->
+    <mastersession>30</mastersession>
+  </timeout>
+  
+  <!-- predefined life-cycle object names -->
+  <lifecycle>
+    <application>agent.Application</application>
+      <mastersession>agent.Session</mastersession>
+  </lifecycle>
+  
+  <connection>
+    <!-- GLOBAL | DATASOURCE | OFF -->
+    <property name="client.metadata_cacherole">OFF</property>
+  </connection>  
+
+</application>
