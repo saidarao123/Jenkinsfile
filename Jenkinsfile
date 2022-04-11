@@ -9,8 +9,13 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               git clone $repo
+               #git clone $repo
                 }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn clean package '
+                    }
         }
     } 
 }
