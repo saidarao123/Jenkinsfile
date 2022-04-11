@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pwd&&mvn clean package '
+                sh 'pwd&&cd /var/lib/jenkins/workspace/Krishhna/Jenkins_builld/jio&&mvn clean package '
                     }
         }
     }
